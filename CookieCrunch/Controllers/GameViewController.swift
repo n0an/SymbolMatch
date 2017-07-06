@@ -80,7 +80,6 @@ class GameViewController: UIViewController, GADBannerViewDelegate, GADInterstiti
         //        backgroundMusic?.play()
         
         
-        
         adsRemoved = UserDefaults.standard.bool(forKey: "removeAds")
         
         if !adsRemoved {
@@ -109,7 +108,7 @@ class GameViewController: UIViewController, GADBannerViewDelegate, GADInterstiti
     
     func adjustAlpha() {
         
-        let targetAlpha: CGFloat = 0.7
+        let targetAlpha: CGFloat = 0.8
         
         targetLabel.alpha = targetAlpha
         movesLabel.alpha = targetAlpha

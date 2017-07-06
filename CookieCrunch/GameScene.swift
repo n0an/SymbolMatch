@@ -64,7 +64,7 @@ class GameScene: SKScene {
         // (0.5, 0.5), the background image will always be centered on the screen.
         let background = SKSpriteNode(imageNamed: "Background")
         background.size = size
-//        addChild(background)
+        //        addChild(background)
         
         // Add a new node that is the container for all other layers on the playing
         // field. This gameLayer is also centered in the screen.
@@ -149,9 +149,6 @@ class GameScene: SKScene {
                     point.x -= TileWidth/2
                     point.y -= TileHeight/2
                     tileNode.position = point
-                    
-                    tileNode.alpha = 0.4
-                    
                     tilesLayer.addChild(tileNode)
                 }
             }
@@ -165,8 +162,6 @@ class GameScene: SKScene {
             sprite.size = CGSize(width: TileWidth, height: TileHeight)
             sprite.position = pointFor(column: cookie.column, row: cookie.row)
             cookiesLayer.addChild(sprite)
-            
-
             cookie.sprite = sprite
             
             // Give each cookie sprite a small, random delay. Then fade them in.
